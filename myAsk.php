@@ -22,12 +22,10 @@ require('controllers/questions/myAskController.php');
             <div class="card-body">
                 
                 <p class="card-text">
-                    <?= 
-                        $ask['description'];
-                    ?>
+                    <?=  $ask['description'];?>
                     </p>
                 <a href="#" class="btn btn-primary">Accéder à la question</a>
-                <a href="#" class="btn btn-warning">Modifier la question</a>
+                <a href="editAsk.php?id=<?=  $ask['id'];?>" class="btn btn-warning">Modifier la question</a>
             </div>
         </div>
         <br><br>
